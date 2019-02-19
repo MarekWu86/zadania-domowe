@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>Formularz</h1>
-    <p>Wypełnij formularz swoim danymi</p>
-    <form>
+    <p>Wypełnij formularz swoim danymi osobowymi</p>
+    <form action="https://formspree.io/marek.wojdylo@m3group.pl" method="POST">
         <input type="text" name="imie" placeholder="Imię">
         <input type="text" name="nazwisko" placeholder="Nazwisko"><br>
         <input type="email" name="email" placeholder="E-mail">
@@ -22,8 +22,9 @@
         Płeć<br>
         <input type="radio" name="man">mężczyzna<br>
         <input type="radio" name="man">kobieta<br>
-        <textarea rows="10" cols="30"></textarea><br>
-        <input type="checkbox" name="agreement"> Wyrażam zgodę na użycie moich danych osobowych.
+        <textarea rows="10" cols="30" name="message"></textarea><br>
+        <input type="checkbox" name="agreement"> Wyrażam zgodę na użycie moich danych osobowych.<br><br>
+        <input type="submit" value="Wyślij">
     </form>
 </body>
 </html>
